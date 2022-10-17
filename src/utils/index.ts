@@ -4,7 +4,7 @@ import { Point } from '../classes/index';
 import { Dimensions, IDimensions } from '../classes/Dimensions';
 
 export function isTensor(tensor: any, dim: number) {
-  return tensor instanceof tf.Tensor && tensor.shape.length === dim;
+  return tensor.shape.length === dim;
 }
 
 export function isTensor1D(tensor: any): tensor is tf.Tensor1D {
